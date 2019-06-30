@@ -14,7 +14,8 @@
     "@types/jest": "latest",
     "ts-jest": "latest",
     "express": "^4.16.1",
-    "typescript": "latest"
+    "typescript": "latest",
+    "supertest": "latest"
   },
   "devDependecies": {
     "@types/express": "latest"
