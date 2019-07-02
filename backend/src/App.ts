@@ -1,4 +1,5 @@
 import * as express from 'express'
+import * as cors from 'cors'
 import { Withdraw } from './Withdraw'
 
 class App {
@@ -10,6 +11,7 @@ class App {
   }
 
   private mountRoutes (): void {
+    this.express.use(cors())
     const router = express.Router()
 
     router.get('/', (req, res) => {
