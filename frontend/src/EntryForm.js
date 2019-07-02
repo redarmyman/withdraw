@@ -22,6 +22,9 @@ class EntryForm extends Component {
       .then((result) => {
         this.setState({ withdraw: result.data.result })
       })
+      .catch((err) => {
+        this.setState({ withdraw: err.response.data.message })
+      }) 
   }
 
   render() {
@@ -39,7 +42,7 @@ class EntryForm extends Component {
 
           <button type="submit">Submit</button>
         </form>
-        <p id="name">{ withdraw.join(', ') }</p>
+        <p id="name">{ Array.isArray(withdraw) ? withdraw.join(', ') : withdraw }</p>
       </p>
     );
   }
