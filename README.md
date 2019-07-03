@@ -30,11 +30,11 @@ Result: [Empty Set]
 ## Solution
 
 1. Download this code
-1. Run:
+2. Run:
 ```
 docker-compose up -d --build
 ```
-1. You can then access frontend at:
+3. You can then access frontend at:
 ```
 http://localhost:3001
 ```
